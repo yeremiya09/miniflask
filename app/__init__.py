@@ -63,8 +63,12 @@ def create_app():
             "개발자로 일한 경력이 있으신가요?",
         ]
         yesterday = datetime.utcnow() - timedelta(days=1)  # 어제 날짜 계산
-        
-# 5. 데이터베이스 초기화 및 기본 데이터 추가
+
+# 5. 데이터베이스 초기화 및 기본 데이터 추가 
+# utcnow 이제는 권장되지 않는 방식 기존 방식 (경고 발생)
+# now = datetime.datetime.utcnow()
+# 권장 방식 (시간대 정보 포함)
+# now = datetime.datetime.now(datetime.timezone.utc)
 
 # add_initial_questions(): 이 함수는 기본 데이터를 데이터베이스에 추가하는 역할을 합니다. 
 # 특히 기본 질문과 관리자 계정 및 참가자 정보를 추가합니다.
