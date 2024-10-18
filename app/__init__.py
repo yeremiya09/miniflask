@@ -62,7 +62,7 @@ def create_app():
             "프로젝트를 진행해보신적 있으신가요?",
             "개발자로 일한 경력이 있으신가요?",
         ]
-        yesterday = datetime.utcnow() - timedelta(days=1)  # 어제 날짜 계산
+        yesterday = datetime.now(datetime.timezone.utc) - timedelta(days=1)  # 어제 날짜 계산
 
 # 5. 데이터베이스 초기화 및 기본 데이터 추가 
 # utcnow 이제는 권장되지 않는 방식 기존 방식 (경고 발생)
