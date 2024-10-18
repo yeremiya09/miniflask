@@ -28,6 +28,7 @@ if __name__ == "__main__":
 #     app.register_blueprint(main_blueprint)
 
 #     return app
+
 # 팩토리 패턴: 애플리케이션을 생성하는 함수는 "애플리케이션 팩토리"라고 불리는 패턴을 따릅니다. 이 패턴은 여러 환경에 맞게 Flask 인스턴스를 동적으로 생성할 수 있게 도와줍니다. 예를 들어, 개발 환경과 배포 환경에서 다른 설정을 쉽게 적용할 수 있습니다.
 
 # 2. application = create_app()
