@@ -5,8 +5,6 @@
 ### Execution Guide
 - Installation
 ```
-git clone https://github.com/mountain-kangkang/flask_survey.git
-cd flask_survey
 ```
 ```
 pip3 install flask
@@ -14,10 +12,6 @@ pip3 install plotly
 pip3 install flask-migrate
 pip3 install pandas
 pip3 install sqlalchemy
-```
-- Change Diretory
-```
-cd survey_task
 ```
 - Initialize DB
 ```
