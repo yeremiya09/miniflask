@@ -5,8 +5,6 @@
 ### Execution Guide
 - Installation
 ```
-```
-```
 pip3 install flask
 pip3 install plotly
 pip3 install flask-migrate
